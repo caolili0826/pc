@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>当当网</title>
+    <link rel="stylesheet" href="css/sheetStyle.css"/>
+</head>
+<body>
+<div id="hd">
+    <!--顶部toolsStart-->
+    <div id="tools" class="tools">
+        <div class="tools_operate">
+            <!--送至-->
+            <div class="operation_area">
+                <a href="javascript:void 0"  id="area_one" class="area_one">送至：<span id="curent_area">北京</span></a>
+                <ul class="area_list" id="area_list"></ul>
+            </div>
+            <!--顶级链接导航-->
+            <ul class="operation_nav">
+                <li class="nav_cart"><a href="javascript:void 0"><i class="icon_cart"></i>购物车<b>0</b></a></li>
+                <li><a href="javascript:void 0">我的订单</a></li>
+                <li><a href="javascript:void 0">原创征文</a></li>
+                <li ><a href="javascript:void 0" class="nav_call"><i class="icon_call"></i>手机当当</a></li>
+                <li><a href="javascript:void 0" class="nav_dd">我的当当</a></li>
+                <li><a href="javascript:void 0" class="nav_dd">企业采购</a></li>
+                <li><a href="javascript:void 0" class="nav_dd">客服服务</a></li>
+            </ul>
+            <!--欢迎光临-->
+            <div class="operation_welcome">
+                <span>欢迎光临当当，请<a href="javascript:void 0" class="login_link">登录</a><a href="javascript:void 0">成为会员</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--头部toolsEnd-->
+    <!--头部logoStart-->
+    <div class="logo_line_box">
+        <div class="logo_line">
+            <!--logo小图片Start-->
+            <div class="logo">
+                <img src="images/head_images/10.gif" usemap="#logo_link">
+                <map id="logo_link">
+                    <area shape="rect" coords="0,18,200,93" href="javascript:void 0" onfocus="this.blur();">
+                </map>
+            </div>
+            <!--logo小图片End-->
+            <!--logo搜索START-->
+            <div class="search">
+                <form id="form_search" method="get">
+                    <lable for="Key_S" class="lable_search" id="lable_key" onclick="this.style.color='rgb(255, 255, 255)';">不可思议的旅程</lable>
+                    <input type="text" id="Key_S" class="text gray" autocomplete="off"onclick="key_onclick(event)" onfocus="key_onfocus()"onblur="key_onblur(event) "onbeforepaste="onpaste_search()">
+                    <a href="javascript:void  0"></a>
+                    <span class="select">
+                        <span id="show_name">全部分类</span>
+                        <span class="select_icon"></span>
+                    </span>
+                    <input type="button" class="select_button">
+                </form>
+            </div>
+            <!--logo搜索END-->
+            <!--搜索底部START-->
+            <div class="search_bottom">
+                <div class="search_hot">
+                    <a href="javascript:void  0" style="margin-right: 0px;">热搜:</a>
+                    <a href="javascript:void  0">黑马王子</a>
+                    <a href="javascript:void  0">纯羊毛被99元</a>
+                    <a href="javascript:void  0">11.11提前抢</a>
+                    <a href="javascript:void  0">2件5折</a>
+                    <a href="javascript:void  0">预售疯抢</a>
+                    <a href="javascript:void  0">海外购</a>
+                </div>
+                <a href="javascript:void 0" class="search_ads">高级搜索</a>
+            </div>
+            <!--搜索底部END-->
+            <!--搜索关键字START-->
+            <div id="key_word" class="key_word" style="display: none"></div>
+            <!--搜索底部END-->
+            <!--购物车START-->
+            <div class="logo_cart">
+                <a href="javascript:void 0">
+                    <i class="logo_icon_cart">购物车</i>
+                    <b id="cart_count">0</b>
+                </a>
+            </div>
+            <!--购物车END-->
+            <!--我的订单START-->
+            <div class="my_order">
+                <a href="javascript:void 0">我的订单</a>
+                <b></b>
+            </div>
+            <!--我的订单END-->
+        </div>
+    </div>
+    <!--头部logoEnd-->
+    <!--头部导航区Start-->
+    <div class="nav_top">
+        <ul>
+            <li class="nav_top_all"><a href="javascript:void 0">全部商品分类</a></li>
+            <li><a href="javascript:void 0">11.11预售</a></li>
+            <li><a href="javascript:void 0">图书</a></li>
+            <li><a href="javascript:void 0">电子书</a></li>
+            <li><a href="javascript:void 0">原创文学</a></li>
+            <li><a href="javascript:void 0">服装</a></li>
+            <li><a href="javascript:void 0">运动户外</a></li>
+            <li><a href="javascript:void 0">孕婴童</a></li>
+            <li><a href="javascript:void 0">家居</a></li>
+            <li><a href="javascript:void 0">创意文具</a></li>
+            <li><a href="javascript:void 0">特产</a></li>
+            <li><a href="javascript:void 0">海外购</a></li>
+            <li><a href="javascript:void 0">电器城</a></li>
+        </ul>
+    </div>
+    <!--头部导航End-->
+</div>
+<!--body-->
+<div id="bd">
+    <div class="con bd_body">
+        <div class="new_pro" id="block1">
+            <div class="con home_first_screen">
+                <!--左侧开始-->
+                <div class="home_nav_l">
+                    <div class="nav_shadow" id="menu_list">
+                        <ul class="nav_menulist" id="nav_menulist">
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">图书、</a>
+                                    <a href="javascript:void 0">电子书、</a>
+                                    <a href="javascript:void 0">童书</a>
+                                </span>
+                                <span></span>
+                            </li>
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">创意文具、</a>
+                                    <a href="javascript:void 0">艺术品拍卖</a>
+                                </span>
+                                <span></span>
+                            </li>
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">服饰、</a>
+                                    <a href="javascript:void 0">内衣</a>
+                                </span>
+                                <span></span>
+                            </li>
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">鞋靴、</a>
+                                    <a href="javascript:void 0">箱包</a>
+                                </span>
+                                <span></span>
+                            </li>
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">运动户外</a>
+                                </span>
+                                <span></span>
+                            </li>
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">孕、</a>
+                                    <a href="javascript:void 0">婴、</a>
+                                    <a href="javascript:void 0">童</a>
+                                </span>
+                                <span></span>
+                            </li>
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">家居、</a>
+                                    <a href="javascript:void 0">家纺、</a>
+                                    <a href="javascript:void 0">汽车</a>
+                                </span>
+                                <span></span>
+                            </li>
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">家具、</a>
+                                    <a href="javascript:void 0">家装、</a>
+                                    <a href="javascript:void 0">康体</a>
+                                </span>
+                                <span></span>
+                            </li>
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">美妆、</a>
+                                    <a href="javascript:void 0">个人护理、</a>
+                                    <a href="javascript:void 0">成长</a>
+                                </span>
+                                <span></span>
+                            </li>
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">食品、</a>
+                                    <a href="javascript:void 0">茶酒、</a>
+                                    <a href="javascript:void 0">生鲜</a>
+                                </span>
+                                <span></span>
+                            </li>
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">腕表、</a>
+                                    <a href="javascript:void 0">珠宝饰品、</a>
+                                    <a href="javascript:void 0">眼镜</a>
+                                </span>
+                                <span></span>
+                            </li>
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">手机、</a>
+                                    <a href="javascript:void 0">数码</a>
+                                </span>
+                                <span></span>
+                            </li>
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">电脑办公</a>
+                                </span>
+                                <span></span>
+                            </li>
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">家用电器</a>
+                                </span>
+                                <span></span>
+                            </li>
+                            <li class="nav_b">
+                                <span class="nav">
+                                    <a href="javascript:void 0">当当礼品卡、</a>
+                                    <a href="javascript:void 0">生活服务</a>
+                                </span>
+                                <span></span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!--左侧结束-->
+                <!--中间部分开始-->
+                <div class="home_new_c">
+                    <!--上开始-->
+                    <div class="new_ct">
+                        <div class="btn btn_l" id="btn_l">left</div>
+                        <div class="btn btn_r" id="btn_r">right</div>
+                        <div id="content_box">
+                            <ul id="content_t_list">
+                                <li><a href="javascript:void 0"><img src="images/head_images/center_first.jpg"/></a></li>
+                            </ul>
+                        </div>
+                        <ul class="new_ct_tab"></ul>
+                    </div>
+                    <!--上结束-->
+                    <!--下开始-->
+                    <div class="new_cb">
+                        <div class="btn" id="btn_sl">left</div>
+                        <div class="btn" id="btn_sr">right</div>
+                        <div id="content_sbox">
+                            <ul id="c_banner">
+                                <li>
+                                    <a href="javascript:void 0">
+                                        <img src="images/head_images/content_small_first.jpg" />
+                                        <span class="cover"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void 0">
+                                        <img src="images/head_images/content._small_second.jpg" />
+                                        <span class="cover"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void 0">
+                                        <img src="images/head_images/content_small_third.jpg" />
+                                        <span class="cover"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void 0">
+                                        <img src="images/head_images/content_small_forth.jpg" />
+                                        <span class="cover"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--下结束-->
+                </div>
+                <!--中间部分结束-->
+                <!--右侧开始-->
+                <div class="home_notice_r">
+                    <!--右上开始-->
+                    <div class="notice_rt">
+                        <a href="javascript:void 0">
+                            <img src="images/head_images/left_top.jpg" />
+                        </a>
+                    </div>
+                    <!--右上结束-->
+                    <!--右中开始-->
+                    <div class="notice_rc">
+                        <div class="head notice_rc_t">
+                            <ul class="notice_tab_a">
+                                <li class="tabh_0 first on">
+                                    <a href="javascript:void 0"><span>信息公告</span></a>
+                                </li>
+                                <li class="tabh_1">
+                                    <a href="javascript:void 0"><span>服务公告</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="notice_rc_b">
+                            <ul id="notice_content">
+                                <li><a href="javascript:void 0"> <span> 3万种童书4.9折抢购</span></a></li>
+                                <li><a href="javascript:void 0"> <span> 秋冬新装，11.11提前放价</span></a></li>
+                                <li><a href="javascript:void 0"> <span> 阿芙双11  5折再满减</span></a></li>
+                                <li><a href="javascript:void 0"> <span> 30万图书4.9折封顶</span></a></li>
+                            </ul>
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <!--右中结束-->
+                    <!--右下开始-->
+                    <div class="notice_rc notice_rb">
+                        <div class="notice_rb_t">
+                            <ul id="notice_tab_b">
+                                <li class="tabh_0 first on">
+                                    <a href="javascript:void 0"><span><b>当当</b>读书</span></a>
+                                </li>
+                                <li class="tabh_1">
+                                    <a href="javascript:void 0"><span><b>当当</b>优选</span></a>
+                                </li>
+                                <li class="tabh_2">
+                                    <a href="javascript:void 0"><span>礼品卡</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="notice_rb_b" >
+                            <a href="javascript:void 0">
+                                <img src="images/head_images/yueduqi.png" >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--右侧结束-->
+            </div>
+        </div>
+        <!--今日畅销开始-->
+        <div class="today_flash_box" id="block2">
+            <div class="con">
+                <div class="best_seller">
+                    <div class="head">
+                        <h3><span><a href="javascript:void 0">畅销今日闪购</a></span></h3>
+                        <ul>
+                            <li class="on"><a href="javascript:void 0"></a></li>
+                            <li><a href="javascript:void 0" class="on"></a></li>
+                        </ul>
+                    </div>
+                    <div class="tab">
+                        <ul class="clearfix">
+                            <li>
+                                <span class="product_tags"></span>
+                                <a href="javascript:void 0" class="pic">
+                                    <img src="images/flash_images/flash%20(1).jpg" alt="">
+                                </a>
+                                <p class="name">
+                                    <a href="javascript:void  0">
+                                        <span>帮宝适绿帮纸尿裤NB96</span>
+                                        <span class="color">干爽亲肤新体验</span>
+                                    </a>
+                                </p>
+                                <p class="price">
+                                    <span class="price_n">¥139.00</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="product_tags"></span>
+                                <a href="javascript:void 0" class="pic">
+                                    <img src="images/flash_images/flash%20(2).jpg" alt="">
+                                </a>
+                                <p class="name">
+                                    <a href="javascript:void  0">
+                                        <span>双11返场</span>
+                                        <span class="color">办公外设9.9元起</span>
+                                    </a>
+                                </p>
+                                <p class="price">
+                                    <span class="price_n">¥94.50</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="product_tags"></span>
+                                <a href="javascript:void 0" class="pic">
+                                    <img src="images/flash_images/flash%20(3).jpg" alt="">
+                                </a>
+                                <p class="name">
+                                    <a href="javascript:void  0">
+                                        <span>罗莱旗下LOVO 限量秒杀</span>
+                                        <span class="color">全棉斜纹印花四件套</span>
+                                    </a>
+                                </p>
+                                <p class="price">
+                                    <span class="price_n">¥499.50</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="product_tags"></span>
+                                <a href="javascript:void 0" class="pic">
+                                    <img src="images/flash_images/flash%20(4).jpg" alt="">
+                                </a>
+                                <p class="name">
+                                    <a href="javascript:void  0">
+                                        <span>长款保暖外套羽绒大衣</span>
+                                        <span class="color">狂欢继续</span>
+                                    </a>
+                                </p>
+                                <p class="price">
+                                    <span class="price_n">¥599.50</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="product_tags"></span>
+                                <a href="javascript:void 0" class="pic">
+                                    <img src="images/flash_images/flash%20(5).jpg" alt="">
+                                </a>
+                                <p class="name">
+                                    <a href="javascript:void  0">
+                                        <span>进口松下保温电热水瓶</span>
+                                        <span class="color">NC-EG4000 包邮包税</span>
+                                    </a>
+                                </p>
+                                <p class="price">
+                                    <span class="price_n">¥558.50</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="product_tags"></span>
+                                <a href="javascript:void 0" class="pic">
+                                    <img src="images/flash_images/flash%20(6).jpg" alt="">
+                                </a>
+                                <p class="name">
+                                    <a href="javascript:void  0">
+                                        <span>得力原木绘图铅笔</span>
+                                        <span class="color">50支装  2B/HB/2H</span>
+                                    </a>
+                                </p>
+                                <p class="price">
+                                    <span class="price_n">¥19.90</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="product_tags"></span>
+                                <a href="javascript:void 0" class="pic">
+                                    <img src="images/flash_images/flash%20(7).jpg" alt="">
+                                </a>
+                                <p class="name">
+                                    <a href="javascript:void  0">
+                                        <span>洪恩早教益智16G点读笔</span>
+                                        <span class="color">我的第一本套装</span>
+                                    </a>
+                                </p>
+                                <p class="price">
+                                    <span class="price_n">¥399.90</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="product_tags"></span>
+                                <a href="javascript:void 0" class="pic">
+                                    <img src="images/flash_images/flash%20(12).jpg" alt="">
+                                </a>
+                                <p class="name">
+                                    <a href="javascript:void  0">
+                                        <span>货币战争文集</span>
+                                        <span class="color">49折限时抢</span>
+                                    </a>
+                                </p>
+                                <p class="price">
+                                    <span class="price_n">¥171.50</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="product_tags"></span>
+                                <a href="javascript:void 0" class="pic">
+                                    <img src="images/flash_images/flash%20(13).jpg" alt="">
+                                </a>
+                                <p class="name">
+                                    <a href="javascript:void  0">
+                                        <span>战地吉普休闲羽绒服加厚</span>
+                                        <span class="color">当当专供加厚保暖羽绒服</span>
+                                    </a>
+                                </p>
+                                <p class="price">
+                                    <span class="price_n">¥299.00</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="product_tags"></span>
+                                <a href="javascript:void 0" class="pic">
+                                    <img src="images/flash_images/flash%20(14).jpg" alt="">
+                                </a>
+                                <p class="name">
+                                    <a href="javascript:void  0">
+                                        <span>婴儿画报小小口袋书</span>
+                                        <span class="color">4.9折抢！</span>
+                                    </a>
+                                </p>
+                                <p class="price">
+                                    <span class="price_n">¥197.50</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="clearfix" style="display: none;"></ul>
+                    </div>
+                </div>
+                <div class="firm_week">
+                    <div class="head">
+                        <h3> <span><a href="javascript: void 0">厂商周</a></span></h3>
+                    </div>
+                    <div class="tab">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="javascript:void 0" class="pic">
+                                    <img src="images/flash_images/flash_right%20(1).jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void 0" class="pic">
+                                    <img src="images/flash_images/flash_right%20(2).jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void 0" class="pic">
+                                    <img src="images/flash_images/flash_right%20(3).jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void 0" class="pic">
+                                    <img src="images/flash_images/flash_right%20(4).jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--今日畅销结束-->
+        <!--尾品汇开始-->
+        <div class="v_all">
+            <div class="con">
+                <div class="head">
+                    <a href="javascript:void 0"><img src="images/v_all_images/titleofv_01.jpg" alt=""></a>
+                    <a href="javascript:void 0" class="v_link">每天10点上新</a>
+                </div>
+                <div class="tab">
+                    <div class="col left">
+                        <a href="javascript:void 0" class="left_content"><img src="images/v_all_images/pc-v-1104.jpg" alt=""></a>
+                        <div class="left_logo">
+                            <a href="javascript:void 0" class="pic"><img src="images/v_all_images/logo%20(1).jpg" alt=""></a>
+                            <a href="javascript:void 0" class="pic"><img src="images/v_all_images/logo%20(2).jpg" alt=""></a>
+                            <a href="javascript:void 0" class="pic"><img src="images/v_all_images/logo.hpk2VBaO" alt=""></a>
+                            <a href="javascript:void 0" class="pic"><img src="images/v_all_images/logo.hpTJs6n4" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col right">
+                        <div class="super">
+                            <a href="javascript:void 0"><img src="images/v_all_images/pic%20(1).jpg" alt=""></a>
+                            <a href="javascript:void 0"><img src="images/v_all_images/pic%20(2).jpg" alt=""></a>
+                            <a href="javascript:void 0"><img src="images/v_all_images/pic%20(3).jpg" alt=""></a>
+                            <a href="javascript:void 0"><img src="images/v_all_images/pic%20(4).jpg" alt=""></a>
+                            <a href="javascript:void 0"><img src="images/v_all_images/pic%20(5).jpg" alt=""></a>
+                        </div>
+                        <div class="lower">
+                            <a href="javascript:void 0"><img src="images/v_all_images/pic%20(6).jpg" alt=""></a>
+                            <a href="javascript:void 0"><img src="images/v_all_images/pic%20(7).jpg" alt=""></a>
+                            <a href="javascript:void 0"><img src="images/v_all_images/pic%20(8).jpg" alt=""></a>
+                            <a href="javascript:void 0"><img src="images/v_all_images/pic%20(9).jpg" alt=""></a>
+                            <a href="javascript:void 0"><img src="images/v_all_images/pic%20(1).hpmpZq2V" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--尾品汇结束-->
+        <!--最值当开始-->
+        <div class="worthest">
+            <div class="head">
+                <a href="javascript:void 0"><img src="images/worthest_images/zzz.jpg" alt=""></a>
+                <a href="javascript:void 0" class="link">新品单件限量100件</a>
+            </div>
+            <div class="content">
+                <a href="javascript:void 0" class="face_image"><img src="images/worthest_images/pic%20(9).jpg" alt=""></a>
+                <div class="brand_logo">
+                    <a href="javascript:void 0"><img src="images/worthest_images/pic%20(5).jpg" alt=""></a>
+                    <a href="javascript:void 0"><img src="images/worthest_images/pic%20(7).jpg" alt=""></a>
+                    <a href="javascript:void 0"><img src="images/worthest_images/pic%20(13).jpg" alt=""></a>
+                    <a href="javascript:void 0"><img src="images/worthest_images/pic%20(14).jpg" alt=""></a>
+                </div>
+                <div class="activity">
+                    <div class="roll">
+                        <ul class="mix_tab"></ul>
+                        <div class="over">
+                            <ul><li><a href="javascript:void 0"><img src="images/worthest_images/pic%20(8).jpg" alt=""></a></li></ul>
+                        </div>
+                    </div>
+                    <a href="javascript:void 0" class="ac_lower"><img src="images/worthest_images/pic%20(1).hpkh6qAW" alt=""></a>
+                    <a href="javascript:void 0" class="ac_lower"><img src="images/worthest_images/pic%20(1).jpg" alt=""></a>
+                    <a href="javascript:void 0" class="ac_lower"><img src="images/worthest_images/pic%20(10).jpg" alt=""></a>
+                </div>
+                <div class="brand_list">
+                    <a href="javascript:void 0"><img src="images/worthest_images/pic%20(2).jpg" alt=""></a>
+                    <a href="javascript:void 0"><img src="images/worthest_images/pic%20(3).jpg" alt=""></a>
+                    <a href="javascript:void 0"><img src="images/worthest_images/pic%20(6).jpg" alt=""></a>
+                    <a href="javascript:void 0"><img src="images/worthest_images/pic%20(4).jpg" alt=""></a>
+                    <a href="javascript:void 0"><img src="images/worthest_images/pic%20(11).jpg" alt=""></a>
+                    <a href="javascript:void 0"><img src="images/worthest_images/pic%20(12).jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!--最值当结束-->
+        <!--当当优选开始-->
+        <div class="best_brand">
+            <div class="con">
+                <div class="head">
+                    <a class="head_title">当当优选</a>
+                    <ul class="list">
+                        <li><a href="javascript:void 0"><p>当当优选<span>家居家纺</span></p></a></li>
+                        <li><a href="javascript:void 0"><p>N.S.N.F.<span>潮流男装</span></p></a></li>
+                        <li><a href="javascript:void 0"><p>贝康馨<span>童装</span></p></a></li>
+                        <li><a href="javascript:void 0"><p>宝妈日记<span>美妆</span></p></a></li>
+                        <li><a href="javascript:void 0"><p>御姬秀<span>美妆</span></p></a></li>
+                        <li><a href="javascript:void 0"><p>善笙<span>食品保健</span></p></a></li>
+                        <li><a href="javascript:void 0"><p>当当阅读器</p></a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="col left">
+                        <a href="javascript:void 0"><img src="images/best_images/lc1-1115.jpg" alt=""></a>
+                        <a href="javascript:void 0"><img src="images/best_images/lc2-1115.jpg" alt=""></a>
+                        <a href="javascript:void 0"><img src="images/best_images/1115-yp-1-lc3-1115.jpg" alt=""></a>
+                        <a href="javascript:void 0"><img src="images/best_images/1115-yp-2-lc4-1115.jpg" alt=""></a>
+                    </div>
+                    <div class="col center">
+                        <a href="javascript:void 0"><img src="images/best_images/398-341-11-15.jpg" alt=""></a>
+                    </div>
+                    <div class="col right">
+                        <a href="javascript:void 0"><img src="images/best_images/1115-nsnf-zypplc.jpg" alt=""></a>
+                        <a href="javascript:void 0"><img src="images/best_images/1115-pc.jpg" alt=""></a>
+                        <a href="javascript:void 0"><img src="images/best_images/1114pc-ddyp-bmrj-kwt.jpg" alt=""></a>
+                        <a href="javascript:void 0"><img src="images/best_images/ss-zylc-1115.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--当当优选结束-->
+      <!--  &lt;!&ndash;图书开始&ndash;&gt;
+        <div class="book">
+            <div class="head clearfix">
+                <a href="javascript:void 0">图书</a>
+                <span>.</span>
+                <a href="javascript:void 0">电子书</a>
+            </div>
+            <div class="box">
+                <div class="box_head">
+                    <ul class="head_list">
+                        <li class="first on"><span>最新上架</span></li>
+                        <li><span>独家畅品</span></li>
+                        <li><span>重点推荐</span></li>
+                        <li><span>电子书</span></li>
+                    </ul>
+                </div>
+                <div class="box_tab">
+                    <div class="content con">
+                        <a href="javascript:void 0" class="book_left_pic">
+                            <img src="images/book_images/238x441_1111.jpg" alt="">
+                        </a>
+                        <ul class="book_left_img">
+                            <li><a href="javascript:void 0">中小学教辅</a></li>
+                            <li><a href="javascript:void 0">外语</a></li>
+                            <li><a href="javascript:void 0">考试</a></li>
+                            <li><a href="javascript:void 0">小说</a></li>
+                            <li><a href="javascript:void 0">文学</a></li>
+                            <li><a href="javascript:void 0">青春文学</a></li>
+                            <li><a href="javascript:void 0">成功/励志</a></li>
+                            <li><a href="javascript:void 0">管理</a></li>
+                            <li><a href="javascript:void 0">历史</a></li>
+                            <li><a href="javascript:void 0">哲学/宗教</a></li>
+                            <li><a href="javascript:void 0">亲子/家教</a></li>
+                            <li><a href="javascript:void 0">全部分类></a></li>
+                        </ul>
+                        <div class="roll">
+                            <ul class="tab_head">
+                                <li class="cur">1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                            </ul>
+                            <div class="tab_center">
+                                <ul>
+                                    <li><a href="javascript:void 0"><img src="images/book_images/tab_center%20(1).jpg" alt=""></a></li>
+                                    <li><a href="javascript:void 0"><img src="images/book_images/tab_center%20(2).jpg" alt=""></a></li>
+                                    <li><a href="javascript:void 0"><img src="images/book_images/tab_center%20(3).jpg" alt=""></a></li>
+                                    <li><a href="javascript:void 0"><img src="images/book_images/tab_center%20(4).jpg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="book_upper">
+                            <ul>
+                                <li><a href="javascript:void 0"></a></li>
+                                <p class="name"></p>
+                                <p class="price"></p>
+                            </ul>
+                        </div>
+                        <div class="book_lower"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="floor"></div>
+        </div>
+       &lt;!&ndash;图书结束&ndash;&gt;
+
+        <div class="wenchuang">创意文具</div>
+        <div class="clothes">服装</div>
+        <div class="sport">运动</div>
+        <div class="preg_baby">母婴</div>
+        <div class="daily_goods">日常</div>-->
+        <div class="hot_products">
+            <div class="con">
+                <div class="home_screen home_eight_screen">
+                    <div id="hot_product_box">
+                        <div class="hot_head">
+                            <ul>
+                                <li class="on"><a href="javascript:void 0"></a></li>
+                                <li><a href="javascript:void 0"></a></li>
+                            </ul>
+                            <h3><span>推广商品</span></h3>
+                        </div>
+                        <div class="hot_tab">
+                            <div class="hot_tab_content">
+                                <!--<ul class="shop_list con">
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_1_1.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>benato宾度男鞋休闲鞋秋冬鳄鱼纹套脚乐福鞋</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>530.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>0</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_1_2.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>宾度秋冬鳄鱼纹休闲鞋系带减震加州鞋</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>919.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>0</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_1_3.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>benato宾度男鞋休闲 运动鞋牛皮减震户外鞋</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>589.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>0</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_1_4.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>benato宾度男鞋 布洛克鞋雕花系带商务</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>539.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>0</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_1_5.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>奇安达女卫衣 秋冬款加绒开衫连帽卫衣女士</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>99.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>150</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_1_6.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>奇安达女款轻便纯色保暖棉服风衣外套</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>69.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>300</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_1_7.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>benato宾度2016年秋冬新品蟒蛇纹潮流皮靴</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>699.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>100</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_1_8.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>【领劵拍下立减100】户外3-4人全自动帐篷</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>299.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>400</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_1_9.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>奇安达正品air max90气垫跑步鞋情侣运动鞋</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>219.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>200</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_1_10.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>法国PELLIOT户外登山鞋</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>439.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>147</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_1_11.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>宾度男鞋2016冬季新品皮靴英伦男士马丁靴</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>889.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>130</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_1_12.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>benato宾度男鞋 布洛克鞋雕花系带商务</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>539.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>14</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                </ul>-->
+                                <ul class="shop_list con">
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_2_1.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>斯伯丁篮球耐磨室内室外通用</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>156.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>150</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_2_2.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>法国PELLIOT冲锋衣</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>559.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>149</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_2_3.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>鸿星尔克男鞋 erke综训鞋 2016新款综训休闲</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>129.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>129</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_2_4.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>户外冲锋衣 男女秋冬登山服</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>169.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>0</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_2_5.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>情侣款户外运动抓绒卫衣 时尚休闲</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>99.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>3</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_2_6.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>(保而防)护膝男女篮球足球基础款</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>358.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>35</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_2_7.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>宾度男鞋青年百搭男士英伦商务正装皮鞋牛皮</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>539.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>150</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_2_8.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>鸿星尔克男鞋跑步鞋透气轻便时尚男运动鞋旅</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>125.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>939</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_2_9.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>准者蜂窝防撞护腿运动护具</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>38.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>12</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_2_10.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>benato宾度男鞋休闲 板鞋布洛克雕花</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>449.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>17</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_2_11.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>鸿星尔克男鞋情侣款休闲鞋板鞋多彩绿尾拼接</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>109.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>102</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void 0" class="pic">
+                                            <img src="images/hot_product_images/hot_2_12.jpg" alt="">
+                                        </a>
+                                        <p class="hot_name">
+                                            <a href="javascript:void 0"><span>Proscenic（浦桑尼克）Summer P2智能扫地机</span></a>
+                                        </p>
+                                        <p class="hot_price">
+                                            <span>¥<span>1399.00</span></span>
+                                        </p>
+                                        <p class="hot_speak">
+                                            <a href="javascript:void 0">已有<span>4</span>评价</a>
+                                        </p>
+                                        <p></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <div class="footer_pic">
+            <div class="footer_pic_inner">
+                <a href="javascript:void 0" class="footer_pic01"><span>正规渠道正品保障</span></a>
+                <a href="javascript:void 0" class="footer_pic02"><span>放心购物货到付款</span></a>
+                <a href="javascript:void 0" class="footer_pic03"><span>625城市次日到达</span></a>
+                <a href="javascript:void 0" class="footer_pic04"><span>上门退货当面退款</span></a>
+            </div>
+        </div>
+        <div class="footer_new">
+            <div class="footer_sort">
+                <span class="sort_title">购物指南</span>
+                <ul>
+                    <li><a href="javascript:void 0">购物流程</a></li>
+                    <li><a href="javascript:void 0">发票制度</a></li>
+                    <li><a href="javascript:void 0">账户管理</a></li>
+                    <li><a href="javascript:void 0">会员优惠</a></li>
+                </ul>
+            </div>
+            <div class="footer_sort footer_pay">
+                <span class="sort_title">支付方式</span>
+                <ul>
+                    <li><a href="javascript:void 0">货到付款</a></li>
+                    <li><a href="javascript:void 0">网上支付</a></li>
+                    <li><a href="javascript:void 0">礼品卡支付</a></li>
+                    <li><a href="javascript:void 0">银行转账</a></li>
+                </ul>
+            </div>
+            <div class="footer_sort footer_order">
+                <span class="sort_title">订单服务</span>
+                <ul>
+                    <li><a href="javascript:void 0">订单配送查询</a></li>
+                    <li><a href="javascript:void 0">订单状态说明</a></li>
+                    <li><a href="javascript:void 0">自助取消订单</a></li>
+                    <li><a href="javascript:void 0">自助修改订单</a></li>
+                </ul>
+            </div>
+            <div class="footer_sort footer_send">
+                <span class="sort_title">配送方式</span>
+                <ul>
+                    <li><a href="javascript:void 0">配送范围及免邮标准</a></li>
+                    <li><a href="javascript:void 0">当/次日到达</a></li>
+                    <li><a href="javascript:void 0">订单自提</a></li>
+                    <li><a href="javascript:void 0">验货与签收</a></li>
+                </ul>
+            </div>
+            <div class="footer_sort footer_help">
+                <span class="sort_title">退换货</span>
+                <ul>
+                    <li><a href="javascript:void 0">退换货政策</a></li>
+                    <li><a href="javascript:void 0">自助申请退换货</a></li>
+                    <li><a href="javascript:void 0">退换货进度查询</a></li>
+                    <li><a href="javascript:void 0">退款方式和时间</a></li>
+                </ul>
+            </div>
+            <div class="footer_sort footer_merchant">
+                <span class="sort_title">商家服务</span>
+                <ul>
+                    <li><a href="javascript:void 0">商家中心</a></li>
+                    <li><a href="javascript:void 0">运营服务</a></li>
+                    <li><a href="javascript:void 0">加入尾品汇</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_nav_box">
+            <div class="footer_nav">
+                <a href="javascript:void 0">公司简介</a>
+                <span class="sep">|</span>
+                <a href="javascript:void 0">Investor Relations</a>
+                <span class="sep">|</span>
+                <a href="javascript:void 0">诚聘英才</a>
+                <span class="sep">|</span>
+                <a href="javascript:void 0">网站联盟</a>
+                <span class="sep">|</span>
+                <a href="javascript:void 0"><b>当当</b>招商</a>
+                <span class="sep">|</span>
+                <a href="javascript:void 0">机构销售</a>
+                <span class="sep">|</span>
+                <a href="javascript:void 0">手机<b>当当</b></a>
+                <span class="sep">|</span>
+                <a href="javascript:void 0">官方Blog</a>
+                <span class="sep">|</span>
+                <a href="javascript:void 0">热词搜索</a>
+            </div>
+            <div class="copy_right">
+                <span>Copyright(C)<b>当当</b>网 2004-2016, All Rights Reserved</span>
+            </div>
+            <div class="copy_right">
+                <span><a href="javascript:void 0">京ICP证041189号</a></span>
+                <span class="sep">|</span>
+                <span>出版物经营许可证 新出发京批字第直0673号</span>
+                <span class="sep">|</span>
+                <span>食品流通许可证：SP1101011010021855(1-1)</span>
+                <br>
+                <span>互联网药品信息服务资格证编号：(京)-非经营性-2012-0016</span>
+                <span class="sep">|</span>
+                <span>京公网安备110101000001号</span>
+                <br>
+                <span>互联网违法和不良信息举报电话：4001066666-5 邮箱：<a href="javascript: void 0">service@cs.dangdang.com</a></span>
+            </div>
+            <div class="footer_icon">
+                <div class="validator">
+                    <a href="javascript:void 0">
+                        <img src="images/footer_images/validate.gif" alt="">
+                    </a>
+                </div>
+                <div class="validator">
+                    <a href="javascript:void 0">
+                        <img src="images/footer_images/knetSealLogo.png" alt="">
+                    </a>
+                </div>
+                <div class="validator">
+                    <a href="javascript:void 0">
+                        <img src="images/footer_images/net.hpvgUvc9" alt="">
+                    </a>
+                </div>
+                <div class="validator">
+                    <a href="javascript:void 0">
+                        <img src="images/footer_images/brand_128_47.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
